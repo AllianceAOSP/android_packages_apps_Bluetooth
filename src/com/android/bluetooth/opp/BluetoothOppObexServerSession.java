@@ -249,7 +249,7 @@ public class BluetoothOppObexServerSession extends ServerRequestHandler implemen
                         }
                     }
                 }
-                if (!pre_reject && (mimetype == null || (!isWhitelisted && !Constants.mimeTypeMatches(mimeType,
+                if (!pre_reject && (mimeType == null || (!isWhitelisted && !Constants.mimeTypeMatches(mimeType,
                 		Constants.ACCEPTABLE_SHARE_INBOUND_TYPES)) || Constants.mimeTypeMatches(
                 		mimeType, Constants.UNACCEPTABLE_SHARE_INBOUND_TYPES))) {
                 	if (D) {
