@@ -229,7 +229,7 @@ public class BluetoothOppObexServerSession extends ServerRequestHandler implemen
                     } else {
                         extension = name.substring(dotIndex + 1).toLowerCase();
                         MimeTypeMap map = MimeTypeMap.getSingleton();
-                        type = map.getMimeTypeFromExtensions(extension);
+                        type = map.getMimeTypeFromExtension(extension);
                         if (V) {
                         	Log.v(TAG, "Mimetype guessed from extension " + extension + " is " + type);
                         }
